@@ -1,0 +1,25 @@
+#usda 1.0
+
+class "_class_Planet"
+{
+}
+
+def Sphere "Planet" (
+    inherits = </_class_Planet>
+    kind = "model"
+    variantSets = "rings"
+    variants = {
+        string rings = "none"
+    }
+)
+{
+    variantSet "rings" = {
+        "none" {
+            bool has_rings = False
+        }
+        "with_rings" {
+            bool has_rings = True
+        } 
+    }
+     
+}
